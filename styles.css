@@ -1,0 +1,344 @@
+/* Header Styles */
+header {
+    background: linear-gradient(45deg, #0056b3, #007bff);
+    background-size: 200% 200%;
+    animation: gradientMove 5s infinite ease-in-out;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+}
+
+.logo-sello {
+    width: 60px; /* Ajusta según el tamaño deseado */
+    height: 60px;
+    border-radius: 50%; /* Opcional si deseas un efecto circular */
+    object-fit: contain;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    margin: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+}
+
+.container-fluid {
+    min-height: 100vh;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+  }  
+
+h1, h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px;
+    background-color: #003d80;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Vertical Navigation Styles */
+.vertical-nav {
+    position: fixed;
+    top: 50%; /* Centra el menú verticalmente */
+    left: 10px; /* Coloca el menú a 10px del borde izquierdo */
+    width: 200px;
+    height: auto;
+    background-color: #003d80;
+    padding-top: 20px;
+    transform: translateY(-50%); /* Ajusta el menú para que esté perfectamente centrado */
+    z-index: 100;
+}
+
+.vertical-nav h4 {
+    text-align: center;
+    color: white;
+}
+
+.vertical-nav ul {
+    padding-left: 0;
+}
+
+.vertical-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.vertical-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #ffffff, #e3f2fd);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 123, 255, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+    animation: pulse 4s infinite ease-in-out;
+}
+
+.welcome-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0056b3;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    animation: fadeIn 1s ease-out;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    border-radius: 10px;
+}
+
+/* Tradition Card Styles */
+.tradicion-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tradicion-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tradicion-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tradicion-card .card-content {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #007bff;
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(45deg, #0461c4, #00d8bb);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s;
+    border-radius: 7px;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #a200ff, #00b4d8);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s;
+    border-radius: 7px;
+}
+
+.btn-info {
+    background: linear-gradient(45deg, #7cf8af, #00d8c6);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s;
+    border-radius: 7px;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #f8c67c, #e0ee1a);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s;
+    border-radius: 7px;
+}
+
+.btn-dark {
+    background: linear-gradient(45deg, #975e08, #ee1ab9);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s;
+    border-radius: 7px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #00b4d8, #007bff);
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+footer p {
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+/* Utility Classes */
+.text-justify {
+    text-align: justify;
+}
+
+.nav-item a {
+    font-size: 18px; /* Tamaño de fuente para los enlaces */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-item a i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    font-size: 20px; /* Tamaño de los íconos */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-item a {
+        font-size: 16px;
+    }
+    .nav-item a i {
+        font-size: 18px;
+    }
+    .vertical-nav {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Custom Bullets */
+.custom-bullets {
+    list-style-type: none; /* Elimina el estilo predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0;
+    text-align: justify; /* Justificar el texto */
+}
+
+.custom-bullets li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Nunito', sans-serif;
+}
+
+.custom-bullets li::before {
+    content: "•"; /* Símbolo para la viñeta */
+    position: absolute;
+    left: 0;
+    color: #4CAF50; /* Color verde para las viñetas */
+    font-size: 24px;
+}
+
+.custom-bullets li strong {
+    color: #FF6347; /* Color naranja para las fechas */
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
